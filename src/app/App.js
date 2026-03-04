@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       { /* Replace below and add Router Provider*/}
-      <p>REPLACE ME WITH A ROUTER PROVIDER</p>
+      <p>REPLACE ME WITH A ROUTER PROVIDER you smart cookie!</p>
     </>
   );
 }
