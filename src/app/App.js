@@ -9,8 +9,7 @@ import Author from "../components/Author";
 import Profile from "../components/Profile";
 import EditProfileForm from "../components/EditProfileForm";
 import Root from "../components/Root";
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Route } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, Route } from 'react-router-dom';
 
 import "./App.css";
 
@@ -23,7 +22,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <RouterProvider router={router} />
+    <RouterProvider router={router} />  
   );
 }
 
