@@ -15,7 +15,11 @@ import "./App.css";
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={ <Root/> }>
-    // nested routes here will render along with the <Root/> component
+    <Route path='about' element={ <About/> } />
+    <Route path='signup' element={ <SignUp/> } />
+    <Route path='articles' element={ <Articles/> } />
+    <Route path='categories' element={ <Categories/> } />
+    <Route path='profile' element={ <Profile/> } />
   </Route>
 ));
 
