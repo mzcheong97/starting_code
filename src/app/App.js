@@ -13,12 +13,12 @@ import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } 
 
 import "./App.css";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />
-  }
-]);
+const router = createBrowserRouter(createRoutesFromElements(
+  <Route path='/' element={ <Root/> }>
+    // nested routes here will render along with the <Root/> component
+  </Route>
+));
+
 
 function App() {
   return (
