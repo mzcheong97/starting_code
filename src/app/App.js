@@ -14,12 +14,16 @@ import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } 
 import "./App.css";
 
 const router = createBrowserRouter(createRoutesFromElements(
-  <Route path='/' element={ <Root/> }>
-    <Route path='about' element={ <About/> } />
-    <Route path='signup' element={ <SignUp/> } />
-    <Route path='articles' element={ <Articles/> } />
-    <Route path='categories' element={ <Categories/> } />
-    <Route path='profile' element={ <Profile/> } />
+    <Route path='/' element={ <Root/> }>
+    <Route path='about/:title' element={ <About/> } />
+    <Route path='signup/:title' element={ <SignUp/> } />
+    <Route path='articles/:title' element={ <Articles/> } />
+    <Route path='categories/:title' element={ <Categories/> } />
+    <Route path='profile/:title' element={ <Profile/> } />
+    <Route path='edit-profile/:title' element={ <EditProfileForm/> } />
+    <Route path='articles/:title' element={ <Article/> } />
+    <Route path='categories/:title' element={ <Category/> } />
+    <Route path='authors/:name' element={ <Author/> } />
   </Route>
 ));
 
