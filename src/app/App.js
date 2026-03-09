@@ -9,7 +9,7 @@ import Author from "../components/Author";
 import Profile from "../components/Profile";
 import EditProfileForm from "../components/EditProfileForm";
 import Root from "../components/Root";
-import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
+import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route, Link, NavLink } from "react-router-dom";
 
 import "./App.css";
 
