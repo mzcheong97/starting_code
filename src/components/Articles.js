@@ -1,7 +1,8 @@
-import { React, Link, Navlink } from "react";
+import { React } from "react";
 import { useSelector } from "react-redux";
 import { selectArticles, filterArticles } from "../features/articles/articlesSlice";
 import Search from "./Search";
+import { Link, NavLink } from "react-router-dom";
 
 // Import Link and useSearchParams from React Router
 
