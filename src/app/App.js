@@ -14,9 +14,9 @@ import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } 
 import "./App.css";
 
 const router = createBrowserRouter(createRoutesFromElements(
-    <Route path='/' element={ <Root/> }>
+    <Route path='/' element={ <Root/> }> 
     <Route path='about' element={ <About/> } />
-    <Route path='signup' element={ <SignUp/> } />
+    <Route path='sign-up' element={ <SignUp/> } />
     <Route path='articles' element={ <Articles/> } />
     <Route path='categories' element={ <Categories/> } />
     <Route path='profile' element={ <Profile/> } />
