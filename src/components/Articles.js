@@ -2,13 +2,14 @@ import { React } from "react";
 import { useSelector } from "react-redux";
 import { selectArticles, filterArticles } from "../features/articles/articlesSlice";
 import Search from "./Search";
-import { Link, NavLink } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 // Import Link and useSearchParams from React Router
 
 export default function Articles () {
   const articles = useSelector(selectArticles);
-
+  const { title } = useParams();
+  const article = articles[title];
   // Grab URLSearchParams object from useSearchParams hook
   
   // Get the queryParams from object returned from useSearchParams and set to `title`
