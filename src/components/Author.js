@@ -14,7 +14,7 @@ export default function Author () {
 
   return (
     <main>
-      <h1>Articles by REPLACE ME</h1>
+      <h1>Articles by {name}</h1>
       <ul>
         {author && author.articles ? author.articles.map(slug => (
           <li key={slug}>
